@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Built data and indices (rebuild locally; see README "数据重建")
+processed/
+agent_v3/data/memory.sqlite
+agent_v3/data/knowledge_bases/
+agent_v3/data/*.sqlite
+agent_v3/logs/
+agent_v3/_patch_probe.tmp
+
+# Misc
+*.faiss
+*.pkl
+*.npy
+.DS_Store

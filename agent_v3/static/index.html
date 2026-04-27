@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>京猫 Jmall</title>
+    <link rel="stylesheet" href="/static/styles.css?v=20260507_popover_inline" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="shop">
+        <header class="topbar">
+          <div class="brand">
+            <h1>京猫 Jmall</h1>
+            <p id="status">未连接</p>
+          </div>
+          <div class="topbar-actions">
+            <button id="historyToggle" type="button" aria-expanded="false">历史 ▾</button>
+            <button id="newSession" type="button">新会话</button>
+          </div>
+        </header>
+
+        <section id="historyPanel" class="history-panel hidden" aria-hidden="true">
+          <div class="history-empty">没有历史搜索</div>
+        </section>
+
+        <form id="chatForm" class="search-bar">
+          <input
+            id="messageInput"
+            name="message"
+            autocomplete="off"
+            placeholder="搜索商品 / 描述需求 / 让 agent 推荐..."
+          />
+          <button id="sendButton" type="submit">发送</button>
+        </form>
+
+        <div class="feed" id="feed">
+          <div id="greeting" class="greeting">
+            <h2>你好👋</h2>
+            <p>我是京猫 Jmall 导购助手，告诉我你在找什么样的手机或配件，我会为你筛选并解释推荐理由。</p>
+          </div>
+          <div id="answerBubble" class="answer-bubble hidden"></div>
+          <div id="answerOptions" class="answer-options hidden"></div>
+          <div id="waterfallToolbar" class="waterfall-toolbar hidden">
+            <div class="toolbar-row">
+              <div class="toolbar-group" id="sortGroup">
+                <span class="toolbar-label">排序</span>
+                <div class="toolbar-pills" id="sortPills">
+                  <button type="button" class="toolbar-pill active" data-sort="relevance">相关度</button>
+                  <button type="button" class="toolbar-pill" data-sort="price_asc">价格 ↑</button>
+                  <button type="button" class="toolbar-pill" data-sort="price_desc">价格 ↓</button>
+                </div>
+              </div>
+              <div class="toolbar-group" id="priceRangeGroup">
+                <span class="toolbar-label">价格</span>
+                <input id="priceMinInput" class="toolbar-input" type="number" min="0" step="1" placeholder="$ 最低" />
+                <span class="toolbar-sep">—</span>
+                <input id="priceMaxInput" class="toolbar-input" type="number" min="0" step="1" placeholder="$ 最高" />
+                <button type="button" id="clearFiltersBtn" class="toolbar-pill toolbar-pill-ghost">清除</button>
+              </div>
+            </div>
+            <div class="toolbar-row toolbar-row-brands hidden" id="brandGroupRow">
+              <span class="toolbar-label">品牌</span>
+              <div class="toolbar-pills toolbar-pills-wrap" id="brandPills"></div>
+            </div>
+            <div class="toolbar-status" id="toolbarStatus"></div>
+          </div>
+          <div id="waterfall" class="waterfall"></div>
+          <div id="loadMoreSentinel" class="load-more-sentinel"></div>
+          <div id="loadMoreStatus" class="load-more-status hidden">加载中…</div>
+        </div>
+      </section>
+
+      <aside class="debug">
+        <div class="tabs">
+          <button class="tab active" data-panel="events" type="button">Events</button>
+          <button class="tab" data-panel="state" type="button">State</button>
+        </div>
+        <div class="view-tabs">
+          <button class="view-tab active" data-view="visual" type="button">图信息</button>
+          <button class="view-tab" data-view="raw" type="button">原生信息</button>
+        </div>
+        <pre id="eventsPanel" class="panel raw-panel hidden"></pre>
+        <div id="eventsVisualPanel" class="panel visual-panel"></div>
+        <pre id="statePanel" class="panel raw-panel hidden"></pre>
+        <div id="stateVisualPanel" class="panel visual-panel hidden"></div>
+      </aside>
+    </main>
+    <script src="/static/app.js?v=20260507_popover_inline"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "aliases.jsonl": 27,
+    "categories.jsonl": 14,
+    "models.jsonl": 13,
+    "review_facts.jsonl": 13,
+    "sources.jsonl": 25,
+    "tech_terms.jsonl": 16
+  },
+  "notes": [
+    "Seed data only; implement lookup loader/index separately.",
+    "Current facts should expire by ttl_days and fall through to web_lookup when stale."
+  ],
+  "updated_at": "2026-04-28"
+}

@@ -1,0 +1,30 @@
+{"id":"camera_2023_general","query":"2023年拍照好的手机推荐","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["review:2023_camera_flagship_candidates"],"expected_models":["Samsung Galaxy S23 Ultra","Xiaomi 13 Ultra"],"forbidden_ids":["model:xiaomi18_leak_not_confirmed"]}
+{"id":"camera_2023_comparison","query":"2023 手机影像横评 Galaxy 小米 iPhone Pixel","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["review:notebookcheck_2023_camera_comparison"],"expected_models":["Samsung Galaxy S23 Ultra","Xiaomi 13 Ultra","iPhone 15 Pro Max","Google Pixel 8 Pro"]}
+{"id":"xiaomi_2023_camera","query":"2023小米拍照旗舰 徕卡 1英寸","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["review:xiaomi13_ultra_camera_2023","model:xiaomi13_ultra_2023_camera"],"expected_models":["Xiaomi 13 Ultra"]}
+{"id":"samsung_2023_camera","query":"2023三星拍照旗舰 200MP 长焦","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["review:galaxy_s23_ultra_camera_2023","model:galaxy_s23_ultra_2023_camera"],"expected_models":["Samsung Galaxy S23 Ultra"]}
+{"id":"huawei_2023_camera","query":"2023华为拍照旗舰 XMAGE 可变光圈","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["review:huawei_p60_pro_camera_2023","model:huawei_p60_pro_2023_camera"],"expected_models":["Huawei P60 Pro"]}
+{"id":"camera_buying_guide","query":"拍照手机怎么选 人像 夜景 长焦 视频防抖","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["guide:camera_phone_selection"]}
+{"id":"children_photo_guide","query":"拍娃手机怎么选 对焦快 肤色好","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["guide:children_photo_phone_selection"]}
+{"id":"gaming_guide","query":"游戏手机怎么选 散热 高刷 持续帧率","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["guide:gaming_phone_selection"]}
+{"id":"battery_guide","query":"续航手机怎么选 电池 芯片能效 快充","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["guide:battery_phone_selection"]}
+{"id":"current_model_policy","query":"最新款手机写query_plan时曝光机型能不能当官方型号","category":"cell_phone","expected_result_type":"market_fact","expected_ids":["guide:current_model_evidence_policy"],"forbidden_ids":["model:xiaomi18_leak_not_confirmed"]}
+{"id":"xiaomi_latest_model","query":"小米最新款手机型号","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:xiaomi_current_17_family"],"expected_models":["Xiaomi 17","Xiaomi 17 Ultra"],"forbidden_ids":["model:xiaomi18_leak_not_confirmed"]}
+{"id":"xiaomi_latest_camera","query":"粗粮最新款拍照旗舰是什么","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:xiaomi17_ultra","model:xiaomi_current_17_family"],"expected_models":["Xiaomi 17 Ultra"],"forbidden_ids":["model:xiaomi18_leak_not_confirmed"]}
+{"id":"samsung_latest_model","query":"三星最新款旗舰手机是哪一代","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:samsung_current_s26_family"],"expected_models":["Galaxy S26 Ultra"]}
+{"id":"samsung_latest_camera","query":"星星星最新款拍照应该看哪款","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:samsung_current_s26_family","guide:samsung_s26_camera_intent"],"expected_models":["Galaxy S26 Ultra"]}
+{"id":"apple_latest_model","query":"果子最新款手机是什么","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:apple_current_iphone17_family"],"expected_models":["iPhone 17","iPhone 17 Pro"]}
+{"id":"apple_latest_camera","query":"苹果最新款拍照视频应该看哪款","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:iphone17_pro_series","guide:iphone17_pro_camera_intent"],"expected_models":["iPhone 17 Pro","iPhone 17 Pro Max"]}
+{"id":"huawei_latest_mate","query":"华为最新Mate旗舰 mate80","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:huawei_current_mate80_family"],"expected_models":["Huawei Mate 80 series"]}
+{"id":"pixel_current","query":"谷歌Pixel10 旗舰相机","category":"cell_phone","expected_result_type":"model","require_current_fact":true,"expected_ids":["model:pixel10"],"expected_models":["Google Pixel 10"]}
+{"id":"oneplus_gaming_battery","query":"一加13 游戏 续航 6000mAh","category":"cell_phone","expected_result_type":"model","expected_ids":["model:oneplus13"],"expected_models":["OnePlus 13"]}
+{"id":"xiaomi15_camera","query":"小米15 徕卡 拍照 旗舰","category":"cell_phone","expected_result_type":"model","expected_ids":["model:xiaomi15"],"expected_models":["Xiaomi 15"]}
+{"id":"mate70_camera","query":"华为Mate70 可变光圈 拍照","category":"cell_phone","expected_result_type":"model","expected_ids":["model:huawei_mate70"],"expected_models":["Huawei Mate 70"]}
+{"id":"telephoto_term","query":"手机长焦 telephoto 是什么","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:telephoto"]}
+{"id":"ois_term","query":"手机拍照 OIS 防抖是什么意思","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:ois"]}
+{"id":"ltpo_term","query":"LTPO 屏幕 手机续航","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:ltpo"]}
+{"id":"pwm_term","query":"PWM 调光 护眼 手机屏幕","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:pwm"]}
+{"id":"ufs4_term","query":"UFS4 存储 手机性能","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:ufs4"]}
+{"id":"lpddr5x_term","query":"LPDDR5X 内存 手机性能","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:lpddr5x"]}
+{"id":"ip68_term","query":"IP68 防水 手机","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:ip68"]}
+{"id":"ai_phone_term","query":"AI Phone 手机是什么意思","category":"cell_phone","expected_result_type":"tech_term","expected_ids":["tech:ai_phone"]}
+{"id":"accessory_compatibility","query":"手机壳和钢化膜兼容性怎么写 query","category":"accessories","expected_result_type":"market_fact","expected_ids":["guide:accessory_compatibility_required"]}

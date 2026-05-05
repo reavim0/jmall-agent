@@ -1,0 +1,6 @@
+from __future__ import annotations
+
+
+MAX_CLARIFY_ROUNDS = 2
+MAX_PLANS_PER_TURN = 4
+MAX_RECALL_REVIEW_ITERATIONS = 1

@@ -1,0 +1,3311 @@
+{
+  "input": "专门为游戏设计的游戏手机",
+  "selected_choice": {
+    "id": "1",
+    "label": "专门为游戏设计的游戏手机",
+    "description": "外形、散热、肩键都为游戏体验优化",
+    "effects": {
+      "must_have": {
+        "use_case": [
+          "gaming"
+        ]
+      },
+      "nice_to_have": {
+        "ram": [
+          "12GB",
+          "16GB"
+        ]
+      },
+      "avoid": {},
+      "soft": {
+        "nice_to_have": "专门游戏机型，散热强，肩键/触控优化"
+      },
+      "add_preferences": [],
+      "add_dislikes": [],
+      "prefer_brands": [],
+      "forbid_brands": [],
+      "intent_tag": "dedicated_gaming_phone"
+    }
+  },
+  "elapsed_ms": 136503.37,
+  "runtime_metrics": {
+    "total_duration_ms": 136461.54,
+    "nodes": [
+      {
+        "node": "ingest_turn",
+        "nodes": [
+          "ingest_turn"
+        ],
+        "duration_ms": 7.0,
+        "elapsed_ms": 7.0,
+        "token_usage": {}
+      },
+      {
+        "node": "load_user_memory",
+        "nodes": [
+          "load_user_memory"
+        ],
+        "duration_ms": 17.6,
+        "elapsed_ms": 24.6,
+        "token_usage": {}
+      },
+      {
+        "node": "route_turn",
+        "nodes": [
+          "route_turn"
+        ],
+        "duration_ms": 2016.31,
+        "elapsed_ms": 2040.91,
+        "token_usage": {
+          "prompt_tokens": 4469,
+          "completion_tokens": 62,
+          "total_tokens": 4531
+        }
+      },
+      {
+        "node": "update_shopping_context",
+        "nodes": [
+          "update_shopping_context"
+        ],
+        "duration_ms": 6936.75,
+        "elapsed_ms": 8977.65,
+        "token_usage": {
+          "prompt_tokens": 3661,
+          "completion_tokens": 342,
+          "total_tokens": 4003
+        }
+      },
+      {
+        "node": "rewrite_query",
+        "nodes": [
+          "rewrite_query"
+        ],
+        "duration_ms": 108410.82,
+        "elapsed_ms": 117388.47,
+        "token_usage": {
+          "prompt_tokens": 71771,
+          "completion_tokens": 2995,
+          "total_tokens": 74766
+        }
+      },
+      {
+        "node": "execute_query",
+        "nodes": [
+          "execute_query"
+        ],
+        "duration_ms": 12100.78,
+        "elapsed_ms": 129489.24,
+        "token_usage": {}
+      },
+      {
+        "node": "review_recall",
+        "nodes": [
+          "review_recall"
+        ],
+        "duration_ms": 7.7,
+        "elapsed_ms": 129496.95,
+        "token_usage": {}
+      },
+      {
+        "node": "answer_from_retrieval",
+        "nodes": [
+          "answer_from_retrieval"
+        ],
+        "duration_ms": 5185.7,
+        "elapsed_ms": 134682.65,
+        "token_usage": {
+          "prompt_tokens": 7610,
+          "completion_tokens": 256,
+          "total_tokens": 7866
+        }
+      },
+      {
+        "node": "update_user_memory",
+        "nodes": [
+          "update_user_memory"
+        ],
+        "duration_ms": 1777.95,
+        "elapsed_ms": 136460.6,
+        "token_usage": {}
+      },
+      {
+        "node": "finish",
+        "nodes": [
+          "finish"
+        ],
+        "duration_ms": 0.88,
+        "elapsed_ms": 136461.48,
+        "token_usage": {}
+      }
+    ],
+    "token_usage": {
+      "prompt_tokens": 87511,
+      "completion_tokens": 3655,
+      "total_tokens": 91166
+    }
+  },
+  "shopping_context": {
+    "targets": [
+      {
+        "target_id": "target_1",
+        "active": true,
+        "category": "cell_phone",
+        "name": "游戏手机",
+        "original_user_query": "专门为游戏设计的游戏手机",
+        "resolved_query": "专门为游戏设计的游戏手机",
+        "history_refs": [],
+        "preferred_brands": [],
+        "disliked_brands": [],
+        "must_have": {
+          "use_case": [
+            "gaming"
+          ],
+          "series": {
+            "tier": "dedicated_gaming"
+          }
+        },
+        "nice_to_have": {
+          "ram": [
+            "12GB",
+            "16GB"
+          ]
+        },
+        "avoid": {},
+        "soft": {
+          "nice_to_have": "专门游戏机型，散热强，肩键/触控优化"
+        },
+        "preferences": [
+          "专门为游戏设计",
+          "must_have.use_case=gaming",
+          "nice_to_have.ram=12GB,16GB",
+          "专门游戏机型，散热强，肩键/触控优化"
+        ],
+        "dislikes": [],
+        "budget": {
+          "min": null,
+          "max": null
+        },
+        "linked_target_ids": []
+      }
+    ],
+    "global_preferences": [],
+    "global_dislikes": []
+  },
+  "query_support_lookups": [
+    {
+      "query": "2023年游戏手机推荐 ROG Phone RedMagic Black Shark 规格配置",
+      "tool_input": {
+        "query": "2023年游戏手机推荐 ROG Phone RedMagic Black Shark 规格配置",
+        "purpose": "了解 dedicated gaming 系列手机的具体处理器、散热、肩键等规格，以便写入 lexical_query 的结构化字段",
+        "expected_result_type": "market_fact",
+        "require_current_fact": false,
+        "target_ids": [
+          "target_1"
+        ]
+      },
+      "local_found": false,
+      "local_type": null,
+      "evidence_status": "insufficient",
+      "evidence_reason": "本地知识库没有找到可用证据。",
+      "usable_facts": [],
+      "candidate_models": [],
+      "brands": [],
+      "aspects": [],
+      "web_found": false,
+      "web_summary": "",
+      "web_evidence": [
+        "HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/?q=2023%E5%B9%B4%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E6%8E%A8%E8%8D%90+ROG+Phone+RedMagic+Black+Shark+%E8%A7%84%E6%A0%BC%E9%85%8D%E7%BD%AE (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"
+      ]
+    },
+    {
+      "query": "游戏手机 散热 肩键 触控优化 高刷屏 规格",
+      "tool_input": {
+        "query": "游戏手机 散热 肩键 触控优化 高刷屏 规格",
+        "purpose": "了解游戏手机的关键规格特征，如散热系统、肩键、高刷新率屏幕等，用于 semantic_query 和 lexical_query",
+        "expected_result_type": "market_fact",
+        "require_current_fact": false,
+        "target_ids": [
+          "target_1"
+        ]
+      },
+      "local_found": false,
+      "local_type": null,
+      "evidence_status": "insufficient",
+      "evidence_reason": "本地知识库没有找到可用证据。",
+      "usable_facts": [],
+      "candidate_models": [],
+      "brands": [],
+      "aspects": [],
+      "web_found": false,
+      "web_summary": "",
+      "web_evidence": [
+        "HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Read timed out. (read timeout=12.0)"
+      ]
+    },
+    {
+      "query": "ROG Phone 6 2023 规格 处理器 Snapdragon",
+      "tool_input": {
+        "query": "ROG Phone 6 2023 规格 处理器 Snapdragon",
+        "purpose": "确认 ROG Phone 6 的具体处理器型号，以便写入 lexical_query 的结构化字段",
+        "expected_result_type": "model",
+        "require_current_fact": false,
+        "target_ids": [
+          "target_1"
+        ]
+      },
+      "local_found": true,
+      "local_type": "model",
+      "evidence_status": "sufficient",
+      "evidence_reason": "本地知识库找到多条可用证据。",
+      "usable_facts": [
+        {
+          "claim": "Samsung Galaxy S23 Ultra 是 2023 年可召回的影像旗舰候选，官方规格包含 200MP 主摄、3x/10x 双长焦和 Snapdragon 8 Gen 2 for Galaxy；适合拍照、长焦、旗舰需求。",
+          "doc_id": "cell_phone:model_fact:model:galaxy_s23_ultra_2023_camera",
+          "legacy_id": "model:galaxy_s23_ultra_2023_camera",
+          "title": "Samsung Galaxy S23 Ultra 2023 camera flagship",
+          "result_type": "model",
+          "score": 0.6168,
+          "match_reason": "bm25+faiss",
+          "confidence": "high",
+          "source_ids": [
+            "source:samsung_s23_ultra_specs",
+            "source:notebookcheck_2023_camera_smartphones",
+            "source:guardian_s23_ultra_review_2023"
+          ],
+          "source_quality": "official_with_review",
+          "valid_years": [
+            2023,
+            2026
+          ],
+          "aspects": [
+            "flagship",
+            "camera",
+            "zoom"
+          ],
+          "brands": [
+            "Samsung"
+          ],
+          "models": [
+            "Samsung Galaxy S23 Ultra",
+            "Samsung Galaxy S23 Ultra 2023 camera flagship",
+            "Galaxy S23 Ultra",
+            "三星S23 Ultra",
+            "Samsung S23 Ultra",
+            "2023三星拍照旗舰"
+          ],
+          "candidate_models": [
+            {
+              "brand": "Samsung",
+              "model": "Samsung Galaxy S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "Samsung Galaxy S23 Ultra 2023 camera flagship",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "Galaxy S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "三星S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "Samsung S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "2023三星拍照旗舰",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            }
+          ],
+          "catalog_availability": {
+            "current_product_catalog": "present"
+          },
+          "tags": [
+            "historical_2023",
+            "model",
+            "flagship",
+            "camera",
+            "zoom"
+          ]
+        },
+        {
+          "claim": "Xiaomi 13 Ultra 是 2023 年影像旗舰，官方规格为 Leica 四摄、50MP 1-inch IMX989 可变光圈主摄，并有 75mm/120mm 长焦；适合“2023 拍照好/徕卡/影像旗舰”候选，但当前商品库可能没有该精确型号。",
+          "doc_id": "cell_phone:model_fact:model:xiaomi13_ultra_2023_camera",
+          "legacy_id": "model:xiaomi13_ultra_2023_camera",
+          "title": "Xiaomi 13 Ultra 2023 camera flagship",
+          "result_type": "model",
+          "score": 0.6119,
+          "match_reason": "bm25+faiss",
+          "confidence": "high",
+          "source_ids": [
+            "source:xiaomi13_ultra_global_specs",
+            "source:androidcentral_xiaomi13_ultra_review_2023",
+            "source:notebookcheck_2023_camera_smartphones"
+          ],
+          "source_quality": "official_with_review",
+          "valid_years": [
+            2023,
+            2026
+          ],
+          "aspects": [
+            "flagship",
+            "camera",
+            "Leica"
+          ],
+          "brands": [
+            "Xiaomi"
+          ],
+          "models": [
+            "Xiaomi 13 Ultra",
+            "Xiaomi 13 Ultra 2023 camera flagship",
+            "小米13 Ultra",
+            "米13 Ultra",
+            "2023小米拍照旗舰",
+            "徕卡拍照旗舰"
+          ],
+          "candidate_models": [
+            {
+              "brand": "Xiaomi",
+              "model": "Xiaomi 13 Ultra",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "Xiaomi 13 Ultra 2023 camera flagship",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "小米13 Ultra",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "米13 Ultra",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "2023小米拍照旗舰",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "徕卡拍照旗舰",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            }
+          ],
+          "catalog_availability": {
+            "current_product_catalog": "uncertain"
+          },
+          "tags": [
+            "historical_2023",
+            "model",
+            "flagship",
+            "camera",
+            "Leica"
+          ]
+        }
+      ],
+      "candidate_models": [
+        {
+          "brand": "Samsung",
+          "model": "Samsung Galaxy S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "Samsung Galaxy S23 Ultra 2023 camera flagship",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "Galaxy S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "三星S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "Samsung S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "2023三星拍照旗舰",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "Xiaomi 13 Ultra",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "Xiaomi 13 Ultra 2023 camera flagship",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "小米13 Ultra",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "米13 Ultra",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "2023小米拍照旗舰",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "徕卡拍照旗舰",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        }
+      ],
+      "brands": [
+        "Samsung",
+        "Xiaomi"
+      ],
+      "aspects": [
+        "flagship",
+        "camera",
+        "zoom",
+        "Leica"
+      ],
+      "web_found": null,
+      "web_summary": null,
+      "web_evidence": null
+    },
+    {
+      "query": "RedMagic 8 Pro 2023 规格 处理器 Snapdragon",
+      "tool_input": {
+        "query": "RedMagic 8 Pro 2023 规格 处理器 Snapdragon",
+        "purpose": "确认 RedMagic 8 Pro 的具体处理器型号，以便写入 lexical_query 的结构化字段",
+        "expected_result_type": "model",
+        "require_current_fact": false,
+        "target_ids": [
+          "target_1"
+        ]
+      },
+      "local_found": true,
+      "local_type": "model",
+      "evidence_status": "sufficient",
+      "evidence_reason": "本地知识库找到多条可用证据。",
+      "usable_facts": [
+        {
+          "claim": "Samsung Galaxy S23 Ultra 是 2023 年可召回的影像旗舰候选，官方规格包含 200MP 主摄、3x/10x 双长焦和 Snapdragon 8 Gen 2 for Galaxy；适合拍照、长焦、旗舰需求。",
+          "doc_id": "cell_phone:model_fact:model:galaxy_s23_ultra_2023_camera",
+          "legacy_id": "model:galaxy_s23_ultra_2023_camera",
+          "title": "Samsung Galaxy S23 Ultra 2023 camera flagship",
+          "result_type": "model",
+          "score": 0.6146,
+          "match_reason": "bm25+faiss",
+          "confidence": "high",
+          "source_ids": [
+            "source:samsung_s23_ultra_specs",
+            "source:notebookcheck_2023_camera_smartphones",
+            "source:guardian_s23_ultra_review_2023"
+          ],
+          "source_quality": "official_with_review",
+          "valid_years": [
+            2023,
+            2026
+          ],
+          "aspects": [
+            "flagship",
+            "camera",
+            "zoom"
+          ],
+          "brands": [
+            "Samsung"
+          ],
+          "models": [
+            "Samsung Galaxy S23 Ultra",
+            "Samsung Galaxy S23 Ultra 2023 camera flagship",
+            "Galaxy S23 Ultra",
+            "三星S23 Ultra",
+            "Samsung S23 Ultra",
+            "2023三星拍照旗舰"
+          ],
+          "candidate_models": [
+            {
+              "brand": "Samsung",
+              "model": "Samsung Galaxy S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "Samsung Galaxy S23 Ultra 2023 camera flagship",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "Galaxy S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "三星S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "Samsung S23 Ultra",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            },
+            {
+              "brand": "Samsung",
+              "model": "2023三星拍照旗舰",
+              "relation": "model_record",
+              "source": "model:galaxy_s23_ultra_2023_camera"
+            }
+          ],
+          "catalog_availability": {
+            "current_product_catalog": "present"
+          },
+          "tags": [
+            "historical_2023",
+            "model",
+            "flagship",
+            "camera",
+            "zoom"
+          ]
+        },
+        {
+          "claim": "Xiaomi 13 Ultra 是 2023 年影像旗舰，官方规格为 Leica 四摄、50MP 1-inch IMX989 可变光圈主摄，并有 75mm/120mm 长焦；适合“2023 拍照好/徕卡/影像旗舰”候选，但当前商品库可能没有该精确型号。",
+          "doc_id": "cell_phone:model_fact:model:xiaomi13_ultra_2023_camera",
+          "legacy_id": "model:xiaomi13_ultra_2023_camera",
+          "title": "Xiaomi 13 Ultra 2023 camera flagship",
+          "result_type": "model",
+          "score": 0.6125,
+          "match_reason": "bm25+faiss",
+          "confidence": "high",
+          "source_ids": [
+            "source:xiaomi13_ultra_global_specs",
+            "source:androidcentral_xiaomi13_ultra_review_2023",
+            "source:notebookcheck_2023_camera_smartphones"
+          ],
+          "source_quality": "official_with_review",
+          "valid_years": [
+            2023,
+            2026
+          ],
+          "aspects": [
+            "flagship",
+            "camera",
+            "Leica"
+          ],
+          "brands": [
+            "Xiaomi"
+          ],
+          "models": [
+            "Xiaomi 13 Ultra",
+            "Xiaomi 13 Ultra 2023 camera flagship",
+            "小米13 Ultra",
+            "米13 Ultra",
+            "2023小米拍照旗舰",
+            "徕卡拍照旗舰"
+          ],
+          "candidate_models": [
+            {
+              "brand": "Xiaomi",
+              "model": "Xiaomi 13 Ultra",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "Xiaomi 13 Ultra 2023 camera flagship",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "小米13 Ultra",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "米13 Ultra",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "2023小米拍照旗舰",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            },
+            {
+              "brand": "Xiaomi",
+              "model": "徕卡拍照旗舰",
+              "relation": "model_record",
+              "source": "model:xiaomi13_ultra_2023_camera"
+            }
+          ],
+          "catalog_availability": {
+            "current_product_catalog": "uncertain"
+          },
+          "tags": [
+            "historical_2023",
+            "model",
+            "flagship",
+            "camera",
+            "Leica"
+          ]
+        }
+      ],
+      "candidate_models": [
+        {
+          "brand": "Samsung",
+          "model": "Samsung Galaxy S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "Samsung Galaxy S23 Ultra 2023 camera flagship",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "Galaxy S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "三星S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "Samsung S23 Ultra",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Samsung",
+          "model": "2023三星拍照旗舰",
+          "relation": "model_record",
+          "source": "model:galaxy_s23_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "Xiaomi 13 Ultra",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "Xiaomi 13 Ultra 2023 camera flagship",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "小米13 Ultra",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "米13 Ultra",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "2023小米拍照旗舰",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        },
+        {
+          "brand": "Xiaomi",
+          "model": "徕卡拍照旗舰",
+          "relation": "model_record",
+          "source": "model:xiaomi13_ultra_2023_camera"
+        }
+      ],
+      "brands": [
+        "Samsung",
+        "Xiaomi"
+      ],
+      "aspects": [
+        "flagship",
+        "camera",
+        "zoom",
+        "Leica"
+      ],
+      "web_found": null,
+      "web_summary": null,
+      "web_evidence": null
+    },
+    {
+      "query": "ROG Phone 6 处理器 Snapdragon 8+ Gen 1",
+      "tool_input": {
+        "query": "ROG Phone 6 处理器 Snapdragon 8+ Gen 1",
+        "purpose": "确认 ROG Phone 6 的具体处理器型号，看是否可以用 Snapdragon 8+ Gen 1 或 8 Gen 2 写入 lexical_query",
+        "expected_result_type": "tech_term",
+        "require_current_fact": false,
+        "target_ids": [
+          "target_1"
+        ]
+      },
+      "local_found": true,
+      "local_type": "tech_term",
+      "evidence_status": "sufficient",
+      "evidence_reason": "本地知识库找到可用证据。",
+      "usable_facts": [
+        {
+          "claim": "USB-C 快充协议。",
+          "doc_id": "cell_phone:tech_term:tech:pd",
+          "legacy_id": "tech:pd",
+          "title": "USB Power Delivery",
+          "result_type": "tech_term",
+          "score": 0.9,
+          "match_reason": "alias:PD",
+          "confidence": "high",
+          "source_ids": [],
+          "source_quality": null,
+          "valid_years": [
+            2026
+          ],
+          "aspects": [],
+          "brands": [],
+          "models": [],
+          "candidate_models": [],
+          "catalog_availability": {},
+          "tags": [
+            "tech_term",
+            "cell_phone"
+          ]
+        }
+      ],
+      "candidate_models": [],
+      "brands": [],
+      "aspects": [],
+      "web_found": null,
+      "web_summary": null,
+      "web_evidence": null
+    }
+  ],
+  "queries": [
+    {
+      "target_id": "target_1",
+      "query": "游戏手机 ROG Phone RedMagic Black Shark Redmi K50 Gaming Poco F4 GT 12GB 16GB",
+      "query_type": "exact_model",
+      "category": "cell_phone",
+      "semantic_query": {
+        "text": "专门为游戏设计的游戏手机，散热强，肩键/触控优化",
+        "positive_aspects": [
+          "gaming",
+          "dedicated gaming phone",
+          "散热强",
+          "肩键",
+          "触控优化",
+          "专门为游戏设计",
+          "must_have.use_case=gaming",
+          "nice_to_have.ram=12GB,16GB",
+          "专门游戏机型，散热强，肩键/触控优化"
+        ],
+        "negative_aspects": []
+      },
+      "lexical_query": {
+        "must": {
+          "category": [
+            "cell_phone"
+          ],
+          "series": [
+            "ROG Phone",
+            "RedMagic",
+            "Black Shark",
+            "Redmi K50 Gaming",
+            "Poco F4 GT"
+          ]
+        },
+        "should": {
+          "ram": [
+            "12GB",
+            "16GB"
+          ]
+        },
+        "must_not": {
+          "condition": [
+            "翻新机",
+            "二手机"
+          ],
+          "product_type": [
+            "手机壳",
+            "充电器",
+            "钢化膜",
+            "数据线",
+            "转接头"
+          ]
+        }
+      },
+      "budget": {
+        "min": null,
+        "max": null
+      },
+      "supporting_knowledge": [
+        "expanded_structured_intents 提供了 dedicated_gaming 系列的具体 series 值：ROG Phone, RedMagic, Black Shark, Redmi K50 Gaming, Poco F4 GT"
+      ],
+      "product_ref": {},
+      "reason": "基于 expanded_structured_intents 中的 dedicated_gaming series 值，生成 exact_model 查询，召回专门游戏手机系列。nice_to_have 的 12GB/16GB RAM 写入 should。"
+    },
+    {
+      "target_id": "target_1",
+      "query": "游戏手机 旗舰处理器 高刷屏 散热 肩键 12GB 16GB",
+      "query_type": "preference_only",
+      "category": "cell_phone",
+      "semantic_query": {
+        "text": "专门为游戏设计的游戏手机，散热强，肩键/触控优化，高刷新率屏幕",
+        "positive_aspects": [
+          "gaming",
+          "dedicated gaming phone",
+          "散热强",
+          "肩键",
+          "触控优化",
+          "高刷屏",
+          "专门为游戏设计",
+          "must_have.use_case=gaming",
+          "nice_to_have.ram=12GB,16GB",
+          "专门游戏机型，散热强，肩键/触控优化"
+        ],
+        "negative_aspects": []
+      },
+      "lexical_query": {
+        "must": {
+          "category": [
+            "cell_phone"
+          ],
+          "series": [
+            "ROG Phone",
+            "RedMagic",
+            "Black Shark",
+            "Redmi K50 Gaming",
+            "Poco F4 GT"
+          ]
+        },
+        "should": {
+          "ram": [
+            "12GB",
+            "16GB"
+          ],
+          "screen": [
+            "120Hz",
+            "144Hz",
+            "165Hz"
+          ]
+        },
+        "must_not": {
+          "condition": [
+            "翻新机",
+            "二手机"
+          ],
+          "product_type": [
+            "手机壳",
+            "充电器",
+            "钢化膜",
+            "数据线",
+            "转接头"
+          ]
+        }
+      },
+      "budget": {
+        "min": null,
+        "max": null
+      },
+      "supporting_knowledge": [
+        "游戏手机常见品牌包括 ASUS (ROG Phone), Nubia (RedMagic), Xiaomi (Black Shark, Redmi K Gaming), Poco (F4 GT)；游戏手机通常配备高刷屏和旗舰处理器"
+      ],
+      "product_ref": {},
+      "reason": "作为 exact_model 的补充，用品牌+规格召回游戏手机。should.brand 按细分品类常识倾斜游戏手机常见品牌。nice_to_have 的 12GB/16GB RAM 和游戏手机常见的高刷屏写入 should。"
+    },
+    {
+      "target_id": "target_1",
+      "query": "专门为游戏设计的游戏手机 散热强 肩键 触控优化",
+      "query_type": "preference_only_fallback",
+      "category": "cell_phone",
+      "semantic_query": {
+        "text": "专门为游戏设计的游戏手机，散热强，肩键/触控优化，高刷新率屏幕，大电池",
+        "positive_aspects": [
+          "gaming",
+          "dedicated gaming phone",
+          "散热强",
+          "肩键",
+          "触控优化",
+          "高刷屏",
+          "大电池",
+          "专门为游戏设计",
+          "must_have.use_case=gaming",
+          "nice_to_have.ram=12GB,16GB",
+          "专门游戏机型，散热强，肩键/触控优化"
+        ],
+        "negative_aspects": []
+      },
+      "lexical_query": {
+        "must": {
+          "category": [
+            "cell_phone"
+          ],
+          "series": [
+            "ROG Phone",
+            "RedMagic",
+            "Black Shark",
+            "Redmi K50 Gaming",
+            "Poco F4 GT"
+          ]
+        },
+        "should": {
+          "ram": [
+            "12GB",
+            "16GB"
+          ]
+        },
+        "must_not": {
+          "condition": [
+            "翻新机",
+            "二手机"
+          ],
+          "product_type": [
+            "手机壳",
+            "充电器",
+            "钢化膜",
+            "数据线",
+            "转接头"
+          ]
+        }
+      },
+      "budget": {
+        "min": null,
+        "max": null
+      },
+      "supporting_knowledge": [],
+      "product_ref": {},
+      "reason": "作为兜底查询，防止 exact_model 和 brand_preference 召回不足。保留用户原始偏好描述在 semantic_query 中。"
+    }
+  ],
+  "top_results_compact_all": {
+    "target_1:exact_model:0": [
+      {
+        "rank": 1,
+        "raw_id": "B0B2VN5SJ4",
+        "title": "Poco F4 GT 5G + 4G LTE 256GB + 12GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+        "brand": "Xiaomi",
+        "price": 519.99,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4700 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Poco F4 GT; ram 12GB; keyword_hits 5; exact_model Poco F 4 GT",
+        "score": 146.824,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 2,
+        "raw_id": "B0B2VHC49V",
+        "title": "Poco F4 GT 5G + 4G LTE 128GB + 8GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+        "brand": "Xiaomi",
+        "price": 399.99,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4700 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series Poco F4 GT; keyword_hits 4; exact_model Poco F 4 GT; date 2022-06-01",
+        "score": 135.41,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 3,
+        "raw_id": "B0B4RH52BP",
+        "title": "Xiaomi Redmi K50 Gaming 5G + 4G LTE (256GB + 12GB) (NOT Verizon AT&T Cricket Straight Talk) NFC Triple Camera 6.67\" + (w/Fast Car Charger Bundle) (Electric Shadow)",
+        "brand": "Xiaomi",
+        "price": 489.5,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6 Inches",
+        "battery": "4800 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Redmi K50 Gaming; ram 12GB; keyword_hits 4; title_model Redmi K 50 Gaming",
+        "score": 121.688,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 4,
+        "raw_id": "B09MTTPLZY",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 128GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+        "brand": "ASUS",
+        "price": 499.0,
+        "processor": "Snapdragon 888",
+        "ram": "12GB",
+        "storage": "128GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+        "score": 118.349,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 5,
+        "raw_id": "B09KZL6FYS",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – White",
+        "brand": "ASUS",
+        "price": 578.0,
+        "processor": "Snapdragon 888",
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 3; title_model ROG Phone",
+        "score": 116.974,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 6,
+        "raw_id": "B09RV6ZV6M",
+        "title": "Asus ROG Phone 5S ZS676KS 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version | Bundle w/Fast Car Charger- White",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 888+",
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": null,
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 2; title_model ROG Phone",
+        "score": 116.813,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 7,
+        "raw_id": "B08BR5G897",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA, 5G, International Version (No Warranty), Dual 128GB 12GB RAM, Tencent Games with Google Play, White - GSM Unlocked",
+        "brand": "Google",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+        "score": 116.011,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 8,
+        "raw_id": "B08BZ68VPJ",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 128GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+        "brand": "Google",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.77 Inches",
+        "battery": "6000 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+        "score": 115.921,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 9,
+        "raw_id": "B08FFJBPX2",
+        "title": "Asus ROG Phone 3 256GB 12GB RAM 5G ZS661KS / I003DD SD865+ Tencent Version - Black",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.59 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+        "score": 115.232,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 10,
+        "raw_id": "B08CS788P2",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+        "brand": "Google",
+        "price": 635.0,
+        "processor": null,
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "1.77 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 3; title_model ROG Phone",
+        "score": 115.131,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 11,
+        "raw_id": "B08Z31RYNT",
+        "title": "Asus ROG Phone 5 SD888 5G 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Phantom Black",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 3; title_model ROG Phone",
+        "score": 114.223,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 12,
+        "raw_id": "B08KH3J78C",
+        "title": "Asus ROG Phone 3 ZS661KS / I003DD SD865+, 5G, International Version (No Warranty), 512GB 12GB RAM, Black Glare - GSM Unlocked",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "512GB",
+        "screen_size": "6.59 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 3; title_model ROG Phone",
+        "score": 113.486,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 13,
+        "raw_id": "B08YT96TMC",
+        "title": "Asus ROG Phone 5 SD888 5G 256GB 16GB RAM International Version - Storm White",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "4000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 2; title_model ROG Phone",
+        "score": 113.282,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 14,
+        "raw_id": "B092TSSNW7",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games with Google Play - White",
+        "brand": "Google",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 2; title_model ROG Phone",
+        "score": 113.16,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 15,
+        "raw_id": "B092TT3Q5V",
+        "title": "Asus ROG Phone 5 SD888 5G 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Storm White",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 2; title_model ROG Phone",
+        "score": 112.85,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 16,
+        "raw_id": "B086XDLR9B",
+        "title": "Nubia RedMagic 5G Gaming Phone 12GB RAM + 256GB ROM/Smartphones with Qualcomm Snapdragon 865/144Hz: Refresh Rate 6.65″ AMOLED Display/64MP Triple Camera NFC",
+        "brand": "ZTE",
+        "price": null,
+        "processor": "Snapdragon 865",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "4000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; ram 12GB; keyword_hits 3; title_model RedMagic",
+        "score": 112.61,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 17,
+        "raw_id": "B0825DKC2F",
+        "title": "ASUS ROG Phone 2 (New) Unlocked GSM US Version & Warranty, 1TB Storage, 12GB RAM, 6.6” FHD+ AMOLED 120Hz Display, Snapdragon 855 Plus, No Volte, Gaming Smartphone (ZS660KL-S855P-12G1T-MB) (1TB)",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 855",
+        "ram": "12GB",
+        "storage": "1024GB",
+        "screen_size": "6.6\"",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 3; title_model ROG Phone",
+        "score": 111.002,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 18,
+        "raw_id": "B07XPH822S",
+        "title": "ASUS ROG Phone 2 (New) Unlocked GSM US Version & Warranty, 512GB Storage, 12GB RAM, 6.6” FHD+ AMOLED 120Hz Display, Snapdragon 855 Plus, No Volte, Gaming Smartphone (ZS660KL-S855P-12G512G-BK) (512GB)",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 855",
+        "ram": "12GB",
+        "storage": "512GB",
+        "screen_size": "6.6 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 3; title_model ROG Phone",
+        "score": 110.771,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 19,
+        "raw_id": "B0BGG1ZKSP",
+        "title": "REDMAGIC 7S Pro Smartphone 5G, 120Hz Gaming Phone, 6.8\" Full Screen, Under Display Camera, 5000mAh Android Phone, Snapdragon 8+ Gen 1, 18+512GB, 65W Charger US Unlocked Phone Black&Transparent",
+        "brand": "REDMAGIC",
+        "price": 849.0,
+        "processor": "Snapdragon 8+ Gen 1",
+        "ram": "18GB",
+        "storage": "512GB",
+        "screen_size": "6.8 Inches",
+        "battery": "5000 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; keyword_hits 4; title_model RedMagic; date 2022-07-19",
+        "score": 110.685,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 20,
+        "raw_id": "B09PN2VSPB",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+        "brand": "ASUS",
+        "price": 485.0,
+        "processor": "Snapdragon 888",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2022-01-04",
+        "score": 106.941,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 21,
+        "raw_id": "B09DY9H347",
+        "title": "ASUS ROG Phone 5S PRO ZS676KS 5G Dual 512GB 18GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "18GB",
+        "storage": "512GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2021-04-23",
+        "score": 104.4,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 22,
+        "raw_id": "B088FL8XNJ",
+        "title": "Black Shark 3 5G Unlock Gaming Smartphone Global Version 8G 128G Mobile Phones Octa Core Snapdragon Grey",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": null,
+        "ram": null,
+        "storage": "8GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; keyword_hits 3; title_model Black Shark; date 2021-01-30",
+        "score": 104.261,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 23,
+        "raw_id": "B08D3MHBTN",
+        "title": "Asus ROG Phone 5 ZS673KS I005DA 5G Dual 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version Tencent Games with Google Play - Black",
+        "brand": "Google",
+        "price": null,
+        "processor": null,
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "1.7 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2021-03-23",
+        "score": 103.945,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 24,
+        "raw_id": "B087LVRRJB",
+        "title": "Nubia RedMagic 5G Gaming Phone, 5G, 128GB, 8GB RAM, Black - GSM Unlocked",
+        "brand": "Nubia",
+        "price": null,
+        "processor": null,
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.65 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "strict_model_or_series_anchor; keyword_hits 3; series RedMagic; exact_model RedMagic",
+        "score": 103.55,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 25,
+        "raw_id": "B09RZMR2ST",
+        "title": "Black Shark 4 Pro Unlocked Cell Phone, 5G Gaming Phone, Fast Charging 120W Android Phone 12+256GB, 144Hz Snapdragon 888 Smartphone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version - Shadow Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 888",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "strict_model_or_series_anchor; keyword_hits 3; series Black Shark; exact_model Black Shark",
+        "score": 102.862,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 26,
+        "raw_id": "B089Q2V3ZT",
+        "title": "Nubia RedMagic 5G Game Mobile Phone 8GB RAM 128GB ROM Snapdragon865 6.65\" 64MP 4500mAh NFC Android 10 Smartphone",
+        "brand": "Nubia",
+        "price": null,
+        "processor": "Snapdragon865",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "1.7 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; keyword_hits 1; title_model RedMagic; date 2020-06-05",
+        "score": 98.975,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 27,
+        "raw_id": "B087MCG6P4",
+        "title": "Nubia RedMagic 5G Game Mobile Phone 8GB RAM 128GB ROM Snapdragon865 6.65\" 64MP 4500mAh NFC Android 10 Smartphone",
+        "brand": "nubia",
+        "price": null,
+        "processor": "Snapdragon865",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "1.7 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; keyword_hits 1; title_model RedMagic; date 2020-03-11",
+        "score": 98.427,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 28,
+        "raw_id": "B09FX81PJL",
+        "title": "Red Magic 6S Pro Gaming Phone, 6.8\" Screen, 64MP Camera, 5G Android Smartphone, Snapdragon 888+, 16GB RAM+256GB ROM, US Version Black",
+        "brand": "REDMAGIC",
+        "price": null,
+        "processor": "Snapdragon 888+",
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "6.8 Inches",
+        "battery": "5050mAh",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; ram 16GB; keyword_hits 4; date 2021-09-27",
+        "score": 98.131,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 29,
+        "raw_id": "B09FXNP4LW",
+        "title": "Red Magic 6S Pro Gaming Phone, 6.8\" Screen, 64MP Camera, 5G Android Smartphone, Snapdragon 888+, 12GB RAM+128GB ROM, US Version Black",
+        "brand": "REDMAGIC",
+        "price": null,
+        "processor": "Snapdragon 888+",
+        "ram": "12GB",
+        "storage": "128GB",
+        "screen_size": "6.8 Inches",
+        "battery": "5050 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; ram 12GB; keyword_hits 4; date 2021-09-27",
+        "score": 97.701,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 30,
+        "raw_id": "B07HY5C4HW",
+        "title": "ASUS ROG Phone (ZS600KL) 6.0 inchs with 8GB RAM / 512GB Storage, (GSM ONLY, NO CDMA) Factory Unlocked International Version No-Warranty Cell Phone (Black)",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 845",
+        "ram": "8GB",
+        "storage": "512GB",
+        "screen_size": "6 Inches",
+        "battery": "4000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2018-10-02",
+        "score": 96.855,
+        "retriever": "hybrid_bm25_faiss"
+      }
+    ],
+    "target_1:preference_only:1": [
+      {
+        "rank": 1,
+        "raw_id": "B09LXZPCPM",
+        "title": "ASUS ROG Phone 5s - 6.78” FHD+ 2448x1080 HDR 144Hz- 6000mAh Battery - 64MP/13MP/5MP Triple Camera with 24MP Front Camera – 16GB RAM -512GB Storage -5G LTE Unlocked Dual SIM Cell Phone - Phantom Black",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 888",
+        "ram": "16GB",
+        "storage": "512GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 2; series ROG Phone; ram 16GB; screen 144Hz",
+        "score": 77.557,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 2,
+        "raw_id": "B09L4QQCN2",
+        "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 12+256GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version -Frost Grey",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500mAh",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series Black Shark; ram 12GB; screen 144Hz",
+        "score": 75.652,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 3,
+        "raw_id": "B0B2VN5SJ4",
+        "title": "Poco F4 GT 5G + 4G LTE 256GB + 12GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+        "brand": "Xiaomi",
+        "price": 519.99,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4700 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Poco F4 GT; ram 12GB; screen 120Hz; keyword_hits 1",
+        "score": 73.88,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 4,
+        "raw_id": "B09PG6YSMS",
+        "title": "Black Shark 5G Gaming Phone, xiaomi 4 Unlocked Cell Phone |12+256GB | 144Hz Display | 120W Fast Charging | Android Phone Global Version - Black",
+        "brand": "Xiaomi",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series Black Shark; ram 12GB; screen 144Hz",
+        "score": 72.82,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 5,
+        "raw_id": "B0C8BSJGZ5",
+        "title": "ASUS ROG Phone 7 Cell Phone, 6.78” FHD+ 2448x1080 165Hz, 6000mAh Battery, 50MP/13MP/5MP Triple Camera, 16GB RAM, 512GB Storage, 5G LTE Unlocked Dual SIM, Phantom Black, AI2205-16G512G-BK [US Version]",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "16GB",
+        "storage": "512GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000mAh",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 2; series ROG Phone; ram 16GB; screen 165Hz",
+        "score": 72.727,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 6,
+        "raw_id": "B09BJ67S45",
+        "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 12+256GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version - Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "12GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series Black Shark; ram 12GB; screen 144Hz",
+        "score": 71.46,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 7,
+        "raw_id": "B087LVRRJB",
+        "title": "Nubia RedMagic 5G Gaming Phone, 5G, 128GB, 8GB RAM, Black - GSM Unlocked",
+        "brand": "Nubia",
+        "price": null,
+        "processor": null,
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.65 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; exact_model RedMagic; model_suffix_mismatch RedMagic; date 2020-04-14",
+        "score": 62.826,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 8,
+        "raw_id": "B093CT5D77",
+        "title": "ASUS ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+        "brand": "Google",
+        "price": 617.0,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 2; series ROG Phone; ram 12GB; title_model ROG Phone",
+        "score": 60.065,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 9,
+        "raw_id": "B09RZMR2ST",
+        "title": "Black Shark 4 Pro Unlocked Cell Phone, 5G Gaming Phone, Fast Charging 120W Android Phone 12+256GB, 144Hz Snapdragon 888 Smartphone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version - Shadow Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 888",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; exact_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 67.105,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 10,
+        "raw_id": "B099J1DBN6",
+        "title": "ZTE Nubia RedMagic 6R 5G Dual 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+        "brand": "ZTE",
+        "price": null,
+        "processor": null,
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; title_model RedMagic; model_suffix_mismatch RedMagic; date 2022-04-11",
+        "score": 57.069,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 11,
+        "raw_id": "B0BGG1ZKSP",
+        "title": "REDMAGIC 7S Pro Smartphone 5G, 120Hz Gaming Phone, 6.8\" Full Screen, Under Display Camera, 5000mAh Android Phone, Snapdragon 8+ Gen 1, 18+512GB, 65W Charger US Unlocked Phone Black&Transparent",
+        "brand": "REDMAGIC",
+        "price": 849.0,
+        "processor": "Snapdragon 8+ Gen 1",
+        "ram": "18GB",
+        "storage": "512GB",
+        "screen_size": "6.8 Inches",
+        "battery": "5000 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; screen 120Hz; keyword_hits 1; title_model RedMagic",
+        "score": 54.127,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 12,
+        "raw_id": "B09F6ZFBZJ",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+        "brand": "ASUS",
+        "price": 679.0,
+        "processor": "Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series ROG Phone; ram 12GB; title_model ROG Phone",
+        "score": 65.947,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 13,
+        "raw_id": "B086XDLR9B",
+        "title": "Nubia RedMagic 5G Gaming Phone 12GB RAM + 256GB ROM/Smartphones with Qualcomm Snapdragon 865/144Hz: Refresh Rate 6.65″ AMOLED Display/64MP Triple Camera NFC",
+        "brand": "ZTE",
+        "price": null,
+        "processor": "Snapdragon 865",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "4000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; ram 12GB; screen 144Hz; keyword_hits 1",
+        "score": 57.688,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 14,
+        "raw_id": "B0B2VHC49V",
+        "title": "Poco F4 GT 5G + 4G LTE 128GB + 8GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+        "brand": "Xiaomi",
+        "price": 399.99,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4700 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series Poco F4 GT; screen 120Hz; exact_model Poco F 4 GT; date 2022-06-01",
+        "score": 62.459,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 15,
+        "raw_id": "B0B1J3LHPN",
+        "title": "Black Shark 5 Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |12+256GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+        "brand": "Xiaomi",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": null,
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4650 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 56.448,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 16,
+        "raw_id": "B0825DKC2F",
+        "title": "ASUS ROG Phone 2 (New) Unlocked GSM US Version & Warranty, 1TB Storage, 12GB RAM, 6.6” FHD+ AMOLED 120Hz Display, Snapdragon 855 Plus, No Volte, Gaming Smartphone (ZS660KL-S855P-12G1T-MB) (1TB)",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 855",
+        "ram": "12GB",
+        "storage": "1024GB",
+        "screen_size": "6.6\"",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; screen 120Hz; keyword_hits 1",
+        "score": 56.137,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 17,
+        "raw_id": "B09ZL77W64",
+        "title": "Black Shark 5 Pro Unlocked Gaming Smartphone, 12 GB + 256 GB 5G Cell Phone, 6.67\" E4 144Hz Display, Snapdragon 8 Gen 1 + LPDDR5 + UFS3.1, 64MP Camera, 120W Charging with 4650mAh - Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4650 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series Black Shark; screen 144Hz; title_model Black Shark",
+        "score": 54.593,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 18,
+        "raw_id": "B0B4RH52BP",
+        "title": "Xiaomi Redmi K50 Gaming 5G + 4G LTE (256GB + 12GB) (NOT Verizon AT&T Cricket Straight Talk) NFC Triple Camera 6.67\" + (w/Fast Car Charger Bundle) (Electric Shadow)",
+        "brand": "Xiaomi",
+        "price": 489.5,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6 Inches",
+        "battery": "4800 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Redmi K50 Gaming; ram 12GB; keyword_hits 1; title_model Redmi K 50 Gaming",
+        "score": 55.357,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 19,
+        "raw_id": "B092TT3Q5V",
+        "title": "Asus ROG Phone 5 SD888 5G 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Storm White",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series ROG Phone; ram 12GB; title_model ROG Phone",
+        "score": 54.55,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 20,
+        "raw_id": "B0B74K2RNH",
+        "title": "Black Shark 4 Pro 5G Unlocked Gaming Phone, Chinese Version Global RAM, 12+128GB Mobile Phone with 120W Charging 4500mAh, Snapdragon 888, 144Hz 6.67'' Screen, Magnetic Pop-Up Triggers (Black Shadow)",
+        "brand": "Black Shark",
+        "price": 349.0,
+        "processor": "Snapdragon 888",
+        "ram": null,
+        "storage": "128GB",
+        "screen_size": null,
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 56.71,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 21,
+        "raw_id": "B07Y8NVY3Z",
+        "title": "ASUS ROG Phone 2 (ZS660KL) Smartphone 512GB ROM 12GB RAM Snapdragon 855 Plus 6000 mAh NFC Android 9.0 - GSM Only International Version, No Warranty (Black)",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 855",
+        "ram": "12GB",
+        "storage": "512GB",
+        "screen_size": "6.59 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series ROG Phone; ram 12GB; title_model ROG Phone",
+        "score": 54.494,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 22,
+        "raw_id": "B093B4RTLR",
+        "title": "Black Shark 4 Cell Phones, 5G Gaming Smartphone 8GB+128GB, 6.67\" AMOLED Mobile Phone, 144Hz Refresh Rate, 4500mAh with 120W Fast Charging, Snapdragon 870, Grey",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "8GB",
+        "storage": "12GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series Black Shark; screen 144Hz; title_model Black Shark",
+        "score": 54.148,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 23,
+        "raw_id": "B0B2PK69W5",
+        "title": "Black Shark 5 Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |12+256GB | 144Hz Display | 120W Fast Charging Global Version- Grey",
+        "brand": "Xiaomi",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": null,
+        "storage": "256GB",
+        "screen_size": "6.7 Inches",
+        "battery": "4650 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 56.378,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 24,
+        "raw_id": "B07XPH822S",
+        "title": "ASUS ROG Phone 2 (New) Unlocked GSM US Version & Warranty, 512GB Storage, 12GB RAM, 6.6” FHD+ AMOLED 120Hz Display, Snapdragon 855 Plus, No Volte, Gaming Smartphone (ZS660KL-S855P-12G512G-BK) (512GB)",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 855",
+        "ram": "12GB",
+        "storage": "512GB",
+        "screen_size": "6.6 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; screen 120Hz; keyword_hits 1",
+        "score": 55.87,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 25,
+        "raw_id": "B0B2J4PWKW",
+        "title": "Black Shark 5 Pro Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |12+256GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+        "brand": "Xiaomi",
+        "price": null,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": null,
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "15 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 55.338,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 26,
+        "raw_id": "B09BQP1LG8",
+        "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 8+128GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version -Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Amp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 53.923,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 27,
+        "raw_id": "B09FC9VYPW",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+        "brand": "ASUS",
+        "price": 559.0,
+        "processor": "Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "keyword_hits 1; series ROG Phone; ram 12GB; title_model ROG Phone",
+        "score": 54.753,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 28,
+        "raw_id": "B0B1F2MS7Z",
+        "title": "Black Shark 5 Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |8+128GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+        "brand": "Xiaomi",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.7 Inches",
+        "battery": "4650 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 54.574,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 29,
+        "raw_id": "B09PG71V2Z",
+        "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 8+128GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version -Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 53.903,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 30,
+        "raw_id": "B0B2J6BG7S",
+        "title": "Black Shark 5 Pro Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |8+128GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+        "brand": "Xiaomi",
+        "price": null,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.7 Inches",
+        "battery": "4650 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 53.76,
+        "retriever": "hybrid_bm25_faiss"
+      }
+    ],
+    "target_1:preference_only_fallback:2": [
+      {
+        "rank": 1,
+        "raw_id": "B09F6ZFBZJ",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+        "brand": "ASUS",
+        "price": 679.0,
+        "processor": "Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+        "score": 62.874,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 2,
+        "raw_id": "B087LVRRJB",
+        "title": "Nubia RedMagic 5G Gaming Phone, 5G, 128GB, 8GB RAM, Black - GSM Unlocked",
+        "brand": "Nubia",
+        "price": null,
+        "processor": null,
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.65 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; exact_model RedMagic; model_suffix_mismatch RedMagic; date 2020-04-14",
+        "score": 62.83,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 3,
+        "raw_id": "B09L4QQCN2",
+        "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 12+256GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version -Frost Grey",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500mAh",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; ram 12GB; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 62.509,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 4,
+        "raw_id": "B0B2VN5SJ4",
+        "title": "Poco F4 GT 5G + 4G LTE 256GB + 12GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+        "brand": "Xiaomi",
+        "price": 519.99,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4700 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Poco F4 GT; ram 12GB; exact_model Poco F 4 GT; date 2022-06-01",
+        "score": 61.93,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 5,
+        "raw_id": "B099J1DBN6",
+        "title": "ZTE Nubia RedMagic 6R 5G Dual 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+        "brand": "ZTE",
+        "price": null,
+        "processor": null,
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; title_model RedMagic; model_suffix_mismatch RedMagic; date 2022-04-11",
+        "score": 57.071,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 6,
+        "raw_id": "B093CT5D77",
+        "title": "ASUS ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+        "brand": "Google",
+        "price": 617.0,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+        "score": 55.358,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 7,
+        "raw_id": "B09LXZPCPM",
+        "title": "ASUS ROG Phone 5s - 6.78” FHD+ 2448x1080 HDR 144Hz- 6000mAh Battery - 64MP/13MP/5MP Triple Camera with 24MP Front Camera – 16GB RAM -512GB Storage -5G LTE Unlocked Dual SIM Cell Phone - Phantom Black",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 888",
+        "ram": "16GB",
+        "storage": "512GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+        "score": 62.736,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 8,
+        "raw_id": "B09PG6YSMS",
+        "title": "Black Shark 5G Gaming Phone, xiaomi 4 Unlocked Cell Phone |12+256GB | 144Hz Display | 120W Fast Charging | Android Phone Global Version - Black",
+        "brand": "Xiaomi",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; ram 12GB; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 59.474,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 9,
+        "raw_id": "B09BJ67S45",
+        "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 12+256GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version - Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 870",
+        "ram": "12GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; ram 12GB; title_model Black Shark; model_suffix_mismatch Black Shark",
+        "score": 58.165,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 10,
+        "raw_id": "B0C8BSJGZ5",
+        "title": "ASUS ROG Phone 7 Cell Phone, 6.78” FHD+ 2448x1080 165Hz, 6000mAh Battery, 50MP/13MP/5MP Triple Camera, 16GB RAM, 512GB Storage, 5G LTE Unlocked Dual SIM, Phantom Black, AI2205-16G512G-BK [US Version]",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "16GB",
+        "storage": "512GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000mAh",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+        "score": 58.11,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 11,
+        "raw_id": "B09RZMR2ST",
+        "title": "Black Shark 4 Pro Unlocked Cell Phone, 5G Gaming Phone, Fast Charging 120W Android Phone 12+256GB, 144Hz Snapdragon 888 Smartphone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version - Shadow Black",
+        "brand": "Black Shark",
+        "price": null,
+        "processor": "Snapdragon 888",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; exact_model Black Shark; model_suffix_mismatch Black Shark; date 2022-02-08",
+        "score": 55.582,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 12,
+        "raw_id": "B08CS788P2",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+        "brand": "Google",
+        "price": 635.0,
+        "processor": null,
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "1.77 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; title_model ROG Phone; date 2021-03-23",
+        "score": 51.463,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 13,
+        "raw_id": "B0B4RH52BP",
+        "title": "Xiaomi Redmi K50 Gaming 5G + 4G LTE (256GB + 12GB) (NOT Verizon AT&T Cricket Straight Talk) NFC Triple Camera 6.67\" + (w/Fast Car Charger Bundle) (Electric Shadow)",
+        "brand": "Xiaomi",
+        "price": 489.5,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6 Inches",
+        "battery": "4800 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Redmi K50 Gaming; ram 12GB; title_model Redmi K 50 Gaming; date 2022-06-22",
+        "score": 53.469,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 14,
+        "raw_id": "B086XDLR9B",
+        "title": "Nubia RedMagic 5G Gaming Phone 12GB RAM + 256GB ROM/Smartphones with Qualcomm Snapdragon 865/144Hz: Refresh Rate 6.65″ AMOLED Display/64MP Triple Camera NFC",
+        "brand": "ZTE",
+        "price": null,
+        "processor": "Snapdragon 865",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "4000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series RedMagic; ram 12GB; title_model RedMagic; date 2020-04-09",
+        "score": 45.787,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 15,
+        "raw_id": "B08YT96TMC",
+        "title": "Asus ROG Phone 5 SD888 5G 256GB 16GB RAM International Version - Storm White",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "4000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; title_model ROG Phone; date 2021-03-15",
+        "score": 51.364,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 16,
+        "raw_id": "B092TSSNW7",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games with Google Play - White",
+        "brand": "Google",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; date 2021-03-23",
+        "score": 51.216,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 17,
+        "raw_id": "B0B2VHC49V",
+        "title": "Poco F4 GT 5G + 4G LTE 128GB + 8GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+        "brand": "Xiaomi",
+        "price": 399.99,
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screen_size": "6.67 Inches",
+        "battery": "4700 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series Poco F4 GT; exact_model Poco F 4 GT; date 2022-06-01; faiss_semantic",
+        "score": 52.031,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 18,
+        "raw_id": "B07Y8NVY3Z",
+        "title": "ASUS ROG Phone 2 (ZS660KL) Smartphone 512GB ROM 12GB RAM Snapdragon 855 Plus 6000 mAh NFC Android 9.0 - GSM Only International Version, No Warranty (Black)",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 855",
+        "ram": "12GB",
+        "storage": "512GB",
+        "screen_size": "6.59 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+        "score": 51.171,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 19,
+        "raw_id": "B08BR5G897",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA, 5G, International Version (No Warranty), Dual 128GB 12GB RAM, Tencent Games with Google Play, White - GSM Unlocked",
+        "brand": "Google",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; date 2021-03-15",
+        "score": 51.104,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 20,
+        "raw_id": "B0B74K2RNH",
+        "title": "Black Shark 4 Pro 5G Unlocked Gaming Phone, Chinese Version Global RAM, 12+128GB Mobile Phone with 120W Charging 4500mAh, Snapdragon 888, 144Hz 6.67'' Screen, Magnetic Pop-Up Triggers (Black Shadow)",
+        "brand": "Black Shark",
+        "price": 349.0,
+        "processor": "Snapdragon 888",
+        "ram": null,
+        "storage": "128GB",
+        "screen_size": null,
+        "battery": "4500 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series Black Shark; title_model Black Shark; model_suffix_mismatch Black Shark; date 2023-06-07",
+        "score": 45.588,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 21,
+        "raw_id": "B08FFJBPX2",
+        "title": "Asus ROG Phone 3 256GB 12GB RAM 5G ZS661KS / I003DD SD865+ Tencent Version - Black",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.59 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; date 2020-12-09",
+        "score": 50.568,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 22,
+        "raw_id": "B08BZ68VPJ",
+        "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 128GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+        "brand": "Google",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.77 Inches",
+        "battery": "6000 Milliampere Hour (mAh)",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; date 2021-03-23",
+        "score": 50.945,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 23,
+        "raw_id": "B08FCYRHXY",
+        "title": "Asus ROG Phone 3, 5G, International Version (No Warranty), 128GB+12GB, Strix Edition Tencent Version (Black) - GSM Unlocked",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 865",
+        "ram": "12GB",
+        "storage": "128GB",
+        "screen_size": "6.59 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+        "score": 50.17,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 24,
+        "raw_id": "B092TT3Q5V",
+        "title": "Asus ROG Phone 5 SD888 5G 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Storm White",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; date 2021-03-23",
+        "score": 51.04,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 25,
+        "raw_id": "B08KH3J78C",
+        "title": "Asus ROG Phone 3 ZS661KS / I003DD SD865+, 5G, International Version (No Warranty), 512GB 12GB RAM, Black Glare - GSM Unlocked",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "12GB",
+        "storage": "512GB",
+        "screen_size": "6.59 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; date 2020-10-08",
+        "score": 46.601,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 26,
+        "raw_id": "B09FC9VYPW",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+        "brand": "ASUS",
+        "price": 559.0,
+        "processor": "Snapdragon 888",
+        "ram": "12GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+        "score": 51.526,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 27,
+        "raw_id": "B08Z31RYNT",
+        "title": "Asus ROG Phone 5 SD888 5G 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Phantom Black",
+        "brand": "ASUS",
+        "price": null,
+        "processor": null,
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "1.7 Inches",
+        "battery": null,
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; title_model ROG Phone; date 2021-03-15",
+        "score": 50.755,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 28,
+        "raw_id": "B09RV6ZV6M",
+        "title": "Asus ROG Phone 5S ZS676KS 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version | Bundle w/Fast Car Charger- White",
+        "brand": "ASUS",
+        "price": null,
+        "processor": "Snapdragon 888+",
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": null,
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; title_model ROG Phone; date 2022-11-13",
+        "score": 51.432,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 29,
+        "raw_id": "B09KZL6FYS",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – White",
+        "brand": "ASUS",
+        "price": 578.0,
+        "processor": "Snapdragon 888",
+        "ram": "16GB",
+        "storage": "256GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 16GB; title_model ROG Phone; date 2022-01-04",
+        "score": 50.074,
+        "retriever": "hybrid_bm25_faiss"
+      },
+      {
+        "rank": 30,
+        "raw_id": "B09MTTPLZY",
+        "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 128GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+        "brand": "ASUS",
+        "price": 499.0,
+        "processor": "Snapdragon 888",
+        "ram": "12GB",
+        "storage": "128GB",
+        "screen_size": "6.78 Inches",
+        "battery": "6000 Milliamp Hours",
+        "date_first_available": null,
+        "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; date 2022-01-04",
+        "score": 49.916,
+        "retriever": "hybrid_bm25_faiss"
+      }
+    ]
+  },
+  "merged_stream_first80": [
+    {
+      "rank": 1,
+      "raw_id": "B0B2VN5SJ4",
+      "title": "Poco F4 GT 5G + 4G LTE 256GB + 12GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+      "brand": "Xiaomi",
+      "price": 519.99,
+      "processor": "Snapdragon 8 Gen 1",
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4700 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Poco F4 GT; ram 12GB; keyword_hits 5; exact_model Poco F 4 GT",
+      "score": 146.824,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 2,
+      "raw_id": "B0B2VHC49V",
+      "title": "Poco F4 GT 5G + 4G LTE 128GB + 8GB Factory Unlocked 6.67\" 120Hz 64Mp Triple Camera (Not Verizon Sprint Boost Cricket Metro At&T) + (w/Fast Car Charger Bundle) (Stealth Black)",
+      "brand": "Xiaomi",
+      "price": 399.99,
+      "processor": "Snapdragon 8 Gen 1",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4700 Milliampere Hour (mAh)",
+      "date_first_available": null,
+      "brief_reason": "series Poco F4 GT; keyword_hits 4; exact_model Poco F 4 GT; date 2022-06-01",
+      "score": 135.41,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 3,
+      "raw_id": "B0B4RH52BP",
+      "title": "Xiaomi Redmi K50 Gaming 5G + 4G LTE (256GB + 12GB) (NOT Verizon AT&T Cricket Straight Talk) NFC Triple Camera 6.67\" + (w/Fast Car Charger Bundle) (Electric Shadow)",
+      "brand": "Xiaomi",
+      "price": 489.5,
+      "processor": "Snapdragon 8 Gen 1",
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6 Inches",
+      "battery": "4800 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Redmi K50 Gaming; ram 12GB; keyword_hits 4; title_model Redmi K 50 Gaming",
+      "score": 121.688,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 4,
+      "raw_id": "B09MTTPLZY",
+      "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 128GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+      "brand": "ASUS",
+      "price": 499.0,
+      "processor": "Snapdragon 888",
+      "ram": "12GB",
+      "storage": "128GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+      "score": 118.349,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 5,
+      "raw_id": "B09KZL6FYS",
+      "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – White",
+      "brand": "ASUS",
+      "price": 578.0,
+      "processor": "Snapdragon 888",
+      "ram": "16GB",
+      "storage": "256GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 3; title_model ROG Phone",
+      "score": 116.974,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 6,
+      "raw_id": "B09RV6ZV6M",
+      "title": "Asus ROG Phone 5S ZS676KS 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version | Bundle w/Fast Car Charger- White",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 888+",
+      "ram": "16GB",
+      "storage": "256GB",
+      "screen_size": null,
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 2; title_model ROG Phone",
+      "score": 116.813,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 7,
+      "raw_id": "B08BR5G897",
+      "title": "Asus ROG Phone 5 ZS673KS / I005DA, 5G, International Version (No Warranty), Dual 128GB 12GB RAM, Tencent Games with Google Play, White - GSM Unlocked",
+      "brand": "Google",
+      "price": null,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+      "score": 116.011,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 8,
+      "raw_id": "B08BZ68VPJ",
+      "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 128GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+      "brand": "Google",
+      "price": null,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "1.77 Inches",
+      "battery": "6000 Milliampere Hour (mAh)",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+      "score": 115.921,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 9,
+      "raw_id": "B08FFJBPX2",
+      "title": "Asus ROG Phone 3 256GB 12GB RAM 5G ZS661KS / I003DD SD865+ Tencent Version - Black",
+      "brand": "ASUS",
+      "price": null,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.59 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 4; title_model ROG Phone",
+      "score": 115.232,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 10,
+      "raw_id": "B08CS788P2",
+      "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+      "brand": "Google",
+      "price": 635.0,
+      "processor": null,
+      "ram": "16GB",
+      "storage": "256GB",
+      "screen_size": "1.77 Inches",
+      "battery": null,
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 3; title_model ROG Phone",
+      "score": 115.131,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 11,
+      "raw_id": "B08Z31RYNT",
+      "title": "Asus ROG Phone 5 SD888 5G 256GB 16GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Phantom Black",
+      "brand": "ASUS",
+      "price": null,
+      "processor": null,
+      "ram": "16GB",
+      "storage": "256GB",
+      "screen_size": "1.7 Inches",
+      "battery": null,
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 3; title_model ROG Phone",
+      "score": 114.223,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 12,
+      "raw_id": "B08KH3J78C",
+      "title": "Asus ROG Phone 3 ZS661KS / I003DD SD865+, 5G, International Version (No Warranty), 512GB 12GB RAM, Black Glare - GSM Unlocked",
+      "brand": "ASUS",
+      "price": null,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "512GB",
+      "screen_size": "6.59 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 3; title_model ROG Phone",
+      "score": 113.486,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 13,
+      "raw_id": "B08YT96TMC",
+      "title": "Asus ROG Phone 5 SD888 5G 256GB 16GB RAM International Version - Storm White",
+      "brand": "ASUS",
+      "price": null,
+      "processor": null,
+      "ram": "16GB",
+      "storage": "256GB",
+      "screen_size": "1.7 Inches",
+      "battery": "4000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 16GB; keyword_hits 2; title_model ROG Phone",
+      "score": 113.282,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 14,
+      "raw_id": "B092TSSNW7",
+      "title": "Asus ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games with Google Play - White",
+      "brand": "Google",
+      "price": null,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "1.7 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 2; title_model ROG Phone",
+      "score": 113.16,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 15,
+      "raw_id": "B092TT3Q5V",
+      "title": "Asus ROG Phone 5 SD888 5G 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Storm White",
+      "brand": "ASUS",
+      "price": null,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "1.7 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 2; title_model ROG Phone",
+      "score": 112.85,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 16,
+      "raw_id": "B07XPH822S",
+      "title": "ASUS ROG Phone 2 (New) Unlocked GSM US Version & Warranty, 512GB Storage, 12GB RAM, 6.6” FHD+ AMOLED 120Hz Display, Snapdragon 855 Plus, No Volte, Gaming Smartphone (ZS660KL-S855P-12G512G-BK) (512GB)",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 855",
+      "ram": "12GB",
+      "storage": "512GB",
+      "screen_size": "6.6 Inches",
+      "battery": null,
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; keyword_hits 3; title_model ROG Phone",
+      "score": 110.771,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 17,
+      "raw_id": "B09PN2VSPB",
+      "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+      "brand": "ASUS",
+      "price": 485.0,
+      "processor": "Snapdragon 888",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2022-01-04",
+      "score": 106.941,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 18,
+      "raw_id": "B09DY9H347",
+      "title": "ASUS ROG Phone 5S PRO ZS676KS 5G Dual 512GB 18GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+      "brand": "ASUS",
+      "price": null,
+      "processor": null,
+      "ram": "18GB",
+      "storage": "512GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2021-04-23",
+      "score": 104.4,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 19,
+      "raw_id": "B088FL8XNJ",
+      "title": "Black Shark 3 5G Unlock Gaming Smartphone Global Version 8G 128G Mobile Phones Octa Core Snapdragon Grey",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": null,
+      "ram": null,
+      "storage": "8GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; keyword_hits 3; title_model Black Shark; date 2021-01-30",
+      "score": 104.261,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 20,
+      "raw_id": "B08D3MHBTN",
+      "title": "Asus ROG Phone 5 ZS673KS I005DA 5G Dual 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version Tencent Games with Google Play - Black",
+      "brand": "Google",
+      "price": null,
+      "processor": null,
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "1.7 Inches",
+      "battery": null,
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2021-03-23",
+      "score": 103.945,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 21,
+      "raw_id": "B089Q2V3ZT",
+      "title": "Nubia RedMagic 5G Game Mobile Phone 8GB RAM 128GB ROM Snapdragon865 6.65\" 64MP 4500mAh NFC Android 10 Smartphone",
+      "brand": "Nubia",
+      "price": null,
+      "processor": "Snapdragon865",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "1.7 Inches",
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; keyword_hits 1; title_model RedMagic; date 2020-06-05",
+      "score": 98.975,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 22,
+      "raw_id": "B087MCG6P4",
+      "title": "Nubia RedMagic 5G Game Mobile Phone 8GB RAM 128GB ROM Snapdragon865 6.65\" 64MP 4500mAh NFC Android 10 Smartphone",
+      "brand": "nubia",
+      "price": null,
+      "processor": "Snapdragon865",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "1.7 Inches",
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; keyword_hits 1; title_model RedMagic; date 2020-03-11",
+      "score": 98.427,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 23,
+      "raw_id": "B09FX81PJL",
+      "title": "Red Magic 6S Pro Gaming Phone, 6.8\" Screen, 64MP Camera, 5G Android Smartphone, Snapdragon 888+, 16GB RAM+256GB ROM, US Version Black",
+      "brand": "REDMAGIC",
+      "price": null,
+      "processor": "Snapdragon 888+",
+      "ram": "16GB",
+      "storage": "256GB",
+      "screen_size": "6.8 Inches",
+      "battery": "5050mAh",
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; ram 16GB; keyword_hits 4; date 2021-09-27",
+      "score": 98.131,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 24,
+      "raw_id": "B09FXNP4LW",
+      "title": "Red Magic 6S Pro Gaming Phone, 6.8\" Screen, 64MP Camera, 5G Android Smartphone, Snapdragon 888+, 12GB RAM+128GB ROM, US Version Black",
+      "brand": "REDMAGIC",
+      "price": null,
+      "processor": "Snapdragon 888+",
+      "ram": "12GB",
+      "storage": "128GB",
+      "screen_size": "6.8 Inches",
+      "battery": "5050 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; ram 12GB; keyword_hits 4; date 2021-09-27",
+      "score": 97.701,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 25,
+      "raw_id": "B07HY5C4HW",
+      "title": "ASUS ROG Phone (ZS600KL) 6.0 inchs with 8GB RAM / 512GB Storage, (GSM ONLY, NO CDMA) Factory Unlocked International Version No-Warranty Cell Phone (Black)",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 845",
+      "ram": "8GB",
+      "storage": "512GB",
+      "screen_size": "6 Inches",
+      "battery": "4000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; keyword_hits 3; title_model ROG Phone; date 2018-10-02",
+      "score": 96.855,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 26,
+      "raw_id": "B09LXZPCPM",
+      "title": "ASUS ROG Phone 5s - 6.78” FHD+ 2448x1080 HDR 144Hz- 6000mAh Battery - 64MP/13MP/5MP Triple Camera with 24MP Front Camera – 16GB RAM -512GB Storage -5G LTE Unlocked Dual SIM Cell Phone - Phantom Black",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 888",
+      "ram": "16GB",
+      "storage": "512GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "keyword_hits 2; series ROG Phone; ram 16GB; screen 144Hz",
+      "score": 77.557,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 27,
+      "raw_id": "B09L4QQCN2",
+      "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 12+256GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version -Frost Grey",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4500mAh",
+      "date_first_available": null,
+      "brief_reason": "keyword_hits 1; series Black Shark; ram 12GB; screen 144Hz",
+      "score": 75.652,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 28,
+      "raw_id": "B09PG6YSMS",
+      "title": "Black Shark 5G Gaming Phone, xiaomi 4 Unlocked Cell Phone |12+256GB | 144Hz Display | 120W Fast Charging | Android Phone Global Version - Black",
+      "brand": "Xiaomi",
+      "price": null,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "keyword_hits 1; series Black Shark; ram 12GB; screen 144Hz",
+      "score": 72.82,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 29,
+      "raw_id": "B0C8BSJGZ5",
+      "title": "ASUS ROG Phone 7 Cell Phone, 6.78” FHD+ 2448x1080 165Hz, 6000mAh Battery, 50MP/13MP/5MP Triple Camera, 16GB RAM, 512GB Storage, 5G LTE Unlocked Dual SIM, Phantom Black, AI2205-16G512G-BK [US Version]",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 8 Gen 2",
+      "ram": "16GB",
+      "storage": "512GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000mAh",
+      "date_first_available": null,
+      "brief_reason": "keyword_hits 2; series ROG Phone; ram 16GB; screen 165Hz",
+      "score": 72.727,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 30,
+      "raw_id": "B09BJ67S45",
+      "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 12+256GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version - Black",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": "12GB",
+      "storage": "128GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "keyword_hits 1; series Black Shark; ram 12GB; screen 144Hz",
+      "score": 71.46,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 31,
+      "raw_id": "B09RZMR2ST",
+      "title": "Black Shark 4 Pro Unlocked Cell Phone, 5G Gaming Phone, Fast Charging 120W Android Phone 12+256GB, 144Hz Snapdragon 888 Smartphone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version - Shadow Black",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": "Snapdragon 888",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; exact_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 67.105,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 32,
+      "raw_id": "B086XDLR9B",
+      "title": "Nubia RedMagic 5G Gaming Phone 12GB RAM + 256GB ROM/Smartphones with Qualcomm Snapdragon 865/144Hz: Refresh Rate 6.65″ AMOLED Display/64MP Triple Camera NFC",
+      "brand": "ZTE",
+      "price": null,
+      "processor": "Snapdragon 865",
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "1.7 Inches",
+      "battery": "4000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; ram 12GB; screen 144Hz; keyword_hits 1",
+      "score": 57.688,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 33,
+      "raw_id": "B0B74K2RNH",
+      "title": "Black Shark 4 Pro 5G Unlocked Gaming Phone, Chinese Version Global RAM, 12+128GB Mobile Phone with 120W Charging 4500mAh, Snapdragon 888, 144Hz 6.67'' Screen, Magnetic Pop-Up Triggers (Black Shadow)",
+      "brand": "Black Shark",
+      "price": 349.0,
+      "processor": "Snapdragon 888",
+      "ram": null,
+      "storage": "128GB",
+      "screen_size": null,
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 56.71,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 34,
+      "raw_id": "B0B1J3LHPN",
+      "title": "Black Shark 5 Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |12+256GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+      "brand": "Xiaomi",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": null,
+      "storage": "256GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4650 Milliampere Hour (mAh)",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 56.448,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 35,
+      "raw_id": "B0B2PK69W5",
+      "title": "Black Shark 5 Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |12+256GB | 144Hz Display | 120W Fast Charging Global Version- Grey",
+      "brand": "Xiaomi",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": null,
+      "storage": "256GB",
+      "screen_size": "6.7 Inches",
+      "battery": "4650 Milliampere Hour (mAh)",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 56.378,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 36,
+      "raw_id": "B0825DKC2F",
+      "title": "ASUS ROG Phone 2 (New) Unlocked GSM US Version & Warranty, 1TB Storage, 12GB RAM, 6.6” FHD+ AMOLED 120Hz Display, Snapdragon 855 Plus, No Volte, Gaming Smartphone (ZS660KL-S855P-12G1T-MB) (1TB)",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 855",
+      "ram": "12GB",
+      "storage": "1024GB",
+      "screen_size": "6.6\"",
+      "battery": null,
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; screen 120Hz; keyword_hits 1",
+      "score": 56.137,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 37,
+      "raw_id": "B0B2J4PWKW",
+      "title": "Black Shark 5 Pro Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |12+256GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+      "brand": "Xiaomi",
+      "price": null,
+      "processor": "Snapdragon 8 Gen 1",
+      "ram": null,
+      "storage": "256GB",
+      "screen_size": "6.67 Inches",
+      "battery": "15 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 55.338,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 38,
+      "raw_id": "B09ZL77W64",
+      "title": "Black Shark 5 Pro Unlocked Gaming Smartphone, 12 GB + 256 GB 5G Cell Phone, 6.67\" E4 144Hz Display, Snapdragon 8 Gen 1 + LPDDR5 + UFS3.1, 64MP Camera, 120W Charging with 4650mAh - Black",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": "Snapdragon 8 Gen 1",
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4650 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "keyword_hits 1; series Black Shark; screen 144Hz; title_model Black Shark",
+      "score": 54.593,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 39,
+      "raw_id": "B0B1F2MS7Z",
+      "title": "Black Shark 5 Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |8+128GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+      "brand": "Xiaomi",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.7 Inches",
+      "battery": "4650 Milliampere Hour (mAh)",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 54.574,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 40,
+      "raw_id": "B093B4RTLR",
+      "title": "Black Shark 4 Cell Phones, 5G Gaming Smartphone 8GB+128GB, 6.67\" AMOLED Mobile Phone, 144Hz Refresh Rate, 4500mAh with 120W Fast Charging, Snapdragon 870, Grey",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": "8GB",
+      "storage": "12GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "keyword_hits 1; series Black Shark; screen 144Hz; title_model Black Shark",
+      "score": 54.148,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 41,
+      "raw_id": "B0BGG1ZKSP",
+      "title": "REDMAGIC 7S Pro Smartphone 5G, 120Hz Gaming Phone, 6.8\" Full Screen, Under Display Camera, 5000mAh Android Phone, Snapdragon 8+ Gen 1, 18+512GB, 65W Charger US Unlocked Phone Black&Transparent",
+      "brand": "REDMAGIC",
+      "price": 849.0,
+      "processor": "Snapdragon 8+ Gen 1",
+      "ram": "18GB",
+      "storage": "512GB",
+      "screen_size": "6.8 Inches",
+      "battery": "5000 Milliampere Hour (mAh)",
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; screen 120Hz; keyword_hits 1; title_model RedMagic",
+      "score": 54.127,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 42,
+      "raw_id": "B09BQP1LG8",
+      "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 8+128GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version -Black",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4500 Amp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 53.923,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 43,
+      "raw_id": "B09PG71V2Z",
+      "title": "Black Shark 4 Unlocked Phone, 5G Gaming Phone, Fast Charging 120W Cell Phone 8+128GB, 144Hz Snapdragon 870 Android Phone, 6.67\" 48MP 4500mAh NFC Mobile Phone Global Version -Black",
+      "brand": "Black Shark",
+      "price": null,
+      "processor": "Snapdragon 870",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.67 Inches",
+      "battery": "4500 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 53.903,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 44,
+      "raw_id": "B0B2J6BG7S",
+      "title": "Black Shark 5 Pro Gaming Phone, Xiaomi 5G Unlocked Cell Phone, Android Mobile Phones, |8+128GB | 144Hz Display | 120W Fast Charging Global Version- Black",
+      "brand": "Xiaomi",
+      "price": null,
+      "processor": "Snapdragon 8 Gen 1",
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.7 Inches",
+      "battery": "4650 Milliampere Hour (mAh)",
+      "date_first_available": null,
+      "brief_reason": "series Black Shark; screen 144Hz; title_model Black Shark; model_suffix_mismatch Black Shark",
+      "score": 53.76,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 45,
+      "raw_id": "B09F6ZFBZJ",
+      "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Version – Black",
+      "brand": "ASUS",
+      "price": 679.0,
+      "processor": "Snapdragon 888",
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+      "score": 62.874,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 46,
+      "raw_id": "B087LVRRJB",
+      "title": "Nubia RedMagic 5G Gaming Phone, 5G, 128GB, 8GB RAM, Black - GSM Unlocked",
+      "brand": "Nubia",
+      "price": null,
+      "processor": null,
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.65 Inches",
+      "battery": null,
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; exact_model RedMagic; model_suffix_mismatch RedMagic; date 2020-04-14",
+      "score": 62.83,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 47,
+      "raw_id": "B099J1DBN6",
+      "title": "ZTE Nubia RedMagic 6R 5G Dual 128GB 8GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+      "brand": "ZTE",
+      "price": null,
+      "processor": null,
+      "ram": "8GB",
+      "storage": "128GB",
+      "screen_size": "6.67 Inches",
+      "battery": null,
+      "date_first_available": null,
+      "brief_reason": "series RedMagic; title_model RedMagic; model_suffix_mismatch RedMagic; date 2022-04-11",
+      "score": 57.071,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 48,
+      "raw_id": "B093CT5D77",
+      "title": "ASUS ROG Phone 5 ZS673KS / I005DA 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) Tencent Games Google Play Installed - Phantom Black",
+      "brand": "Google",
+      "price": 617.0,
+      "processor": null,
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "1.7 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+      "score": 55.358,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 49,
+      "raw_id": "B09FC9VYPW",
+      "title": "ASUS ROG Phone 5S ZS676KS 5G Dual 256GB 12GB RAM Factory Unlocked (GSM Only | No CDMA - not Compatible with Verizon/Sprint) International Version - Black",
+      "brand": "ASUS",
+      "price": 559.0,
+      "processor": "Snapdragon 888",
+      "ram": "12GB",
+      "storage": "256GB",
+      "screen_size": "6.78 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+      "score": 51.526,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 50,
+      "raw_id": "B07Y8NVY3Z",
+      "title": "ASUS ROG Phone 2 (ZS660KL) Smartphone 512GB ROM 12GB RAM Snapdragon 855 Plus 6000 mAh NFC Android 9.0 - GSM Only International Version, No Warranty (Black)",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 855",
+      "ram": "12GB",
+      "storage": "512GB",
+      "screen_size": "6.59 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+      "score": 51.171,
+      "retriever": "hybrid_bm25_faiss"
+    },
+    {
+      "rank": 51,
+      "raw_id": "B08FCYRHXY",
+      "title": "Asus ROG Phone 3, 5G, International Version (No Warranty), 128GB+12GB, Strix Edition Tencent Version (Black) - GSM Unlocked",
+      "brand": "ASUS",
+      "price": null,
+      "processor": "Snapdragon 865",
+      "ram": "12GB",
+      "storage": "128GB",
+      "screen_size": "6.59 Inches",
+      "battery": "6000 Milliamp Hours",
+      "date_first_available": null,
+      "brief_reason": "series ROG Phone; ram 12GB; title_model ROG Phone; model_suffix_mismatch ROG Phone",
+      "score": 50.17,
+      "retriever": "hybrid_bm25_faiss"
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "page_size": 24,
+    "total_cached": 51,
+    "has_more": false
+  },
+  "final_answer": "为你筛选了 51 款专门为游戏设计的手机，主要是 ROG Phone、Poco F4 GT、Redmi K50 Gaming 和 Black Shark 这几个系列，价格从 399 美元到 635 美元不等，大部分都配备了 12GB 或 16GB 的大内存。\n\n其中，我最推荐这几款：如果你追求极致性能和肩键体验，可以看看 [#B09MTTPLZY|ROG Phone 5S]（12GB 内存，6000mAh 大电池）；想要性价比和旗舰处理器，[#B0B2VN5SJ4|Poco F4 GT]（12GB 内存，Snapdragon 8 Gen 1）很合适；而 [#B0B4RH52BP|Redmi K50 Gaming]（12GB 内存，同样搭载 8 Gen 1）也是专门为游戏优化的机型。\n\n不过，目前检索到的机型大多为前代产品（如 ROG Phone 5/5S、Poco F4 GT），缺少最新的 ROG Phone 7/8 或 RedMagic 8 Pro 等新款。如果你更关注最新旗舰处理器或散热技术，可以告诉我，我帮你进一步查找。",
+  "errors": []
+}

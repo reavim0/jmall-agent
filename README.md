@@ -12,6 +12,7 @@
 | 确认意图后 → schema-driven plan + 混合检索 → 商品瀑布流 | ![瀑布流](docs/screenshots/03-waterfall.png) |
 | 工具调用状态行 + 信源 popover | ![工具调用 trail](docs/screenshots/04-tool-trail.png) |
 | 右侧调试面板：Events / State 双 tab + 图信息/原生信息切换 | ![调试面板](docs/screenshots/05-debug.png) |
+| 答案气泡内嵌商品 chip（标准答复体里就近高亮提及的型号） | ![答案 chip](docs/screenshots/06-answer.png) |
 
 ---
 
